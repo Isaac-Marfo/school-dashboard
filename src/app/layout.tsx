@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lama Dev School Management Dashboard",
+  title: "BIM Dev School Management Dashboard",
   description: "Next.js School Management System",
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
             <div className="bg-sky-500 h-full">{children}</div>
           </div>
         </div> */}
-        
+
         {children}
       </body>
     </html>

@@ -3,15 +3,19 @@ import Image from "next/image";
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-between p-4">
+    <div className="flex items-center justify-between p-4 sticky  ">
       {/* search bar */}
-      <div className="hidden md:flex">
+      <div className="hidden md:flex items-center gap-2 bg-white p-2 rounded-full text-xs ring-[1.5px] ring-gray-400">
         <Image src="/search.png" alt="search" width={14} height={14} />
-        <input type="text" placeholder="Search" className="px-2" />
+        <input
+          type="text"
+          placeholder="Search..."
+          className="w-[200px] px-2 bg-transparent outline-none"
+        />
       </div>
 
       {/* icons */}
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 w-full justify-end">
         <div className="flex items-center gap-2 bg-white p-2 rounded-full cursor-pointer">
           <Image src="/message.png" alt="notification" width={20} height={20} />
         </div>
