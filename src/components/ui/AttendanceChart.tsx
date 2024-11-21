@@ -12,6 +12,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import ChartCards from "./ChartCards";
 
 const data = [
   {
@@ -42,12 +43,7 @@ const data = [
 ];
 function AttendanceChart() {
   return (
-    <div className="p-4 bg-white rounded-xl w-full h-full ">
-      <div className="flex items-center justify-between">
-        <h1 className="text-lg font-semibold  text-gray-800">Attendance</h1>
-        <Image src="/moreDark.png" alt="more" width={20} height={20} />
-      </div>
-
+    <ChartCards title="Attendance">
       {/* chart */}
       <ResponsiveContainer width="100%" height="90%">
         <BarChart
@@ -99,7 +95,7 @@ function AttendanceChart() {
           />
         </BarChart>
       </ResponsiveContainer>
-    </div>
+    </ChartCards>
   );
 }
 

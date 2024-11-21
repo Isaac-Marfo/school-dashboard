@@ -37,7 +37,7 @@ function AdminPage() {
       </div>
 
       {/* right side */}
-      <div className="w-full lg:w-1/3   bg-slate-900">1</div>
+      <div className="w-full lg:w-1/3   bg-gray-50">1</div>
     </div>
   );
 }

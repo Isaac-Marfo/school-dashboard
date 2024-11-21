@@ -6,6 +6,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import ChartCards from "./ChartCards";
 
 const data = [
   {
@@ -37,8 +38,8 @@ const style = {
 
 function CountChart() {
   return (
-    <div className="p-4 bg-white rounded-xl w-full h-full ">
-      {/* header  */}
+    <ChartCards title="Students">
+      {/* header 
       <div className="flex items-center justify-between ">
         <h1 className="text-lg font-semibold  text-gray-800">Students</h1>
         <Image
@@ -48,7 +49,7 @@ function CountChart() {
           height={20}
           className=""
         />
-      </div>
+      </div> */}
 
       {/* chart */}
       <div className="relative w-full h-[75%]">
@@ -91,7 +92,7 @@ function CountChart() {
           <h2 className="text-sm text-gray-500">Girls (55%)</h2>
         </div>
       </div>
-    </div>
+    </ChartCards>
   );
 }
 
