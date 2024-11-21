@@ -3,14 +3,14 @@ import Image from "next/image";
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-between p-4 sticky  ">
+    <div className="flex items-center justify-between p-4  ">
       {/* search bar */}
-      <div className="hidden md:flex items-center gap-2 bg-white p-2 rounded-full text-xs ring-[1.5px] ring-gray-400">
+      <div className="hidden md:flex items-center gap-2 bg-white px-2 rounded-full text-xs ring-[1.5px] ring-gray-300">
         <Image src="/search.png" alt="search" width={14} height={14} />
         <input
           type="text"
           placeholder="Search..."
-          className="w-[200px] px-2 bg-transparent outline-none"
+          className="w-[200px] p-2 bg-transparent outline-none"
         />
       </div>
 
