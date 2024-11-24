@@ -11,3 +11,24 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.react-calendar {
+  width: 100% !important;
+  border-radius: none !important;
+  font-family: "Inter", sans-serif !important;
+  /* background: rgb(243, 240, 240);
+  /* line-height: 1.125em; */
+  background-color: white !important;
+  border: none !important;
+  border-radius: none !important;
+  box-shadow: none !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-weight: 600 !important;
+}
+
+.react-calendar__tile--active {
+  background-color: #cfceff !important;
+  border-radius: 4px !important;
+}

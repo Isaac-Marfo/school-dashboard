@@ -76,7 +76,7 @@ const data = [
 
 function FinanceChart() {
   return (
-    <ChartCards title="Finance">
+    <ChartCards title="Finance" rightText="">
       <ResponsiveContainer width="100%" height="90%">
         <LineChart
           width={500}

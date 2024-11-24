@@ -43,7 +43,7 @@ const data = [
 ];
 function AttendanceChart() {
   return (
-    <ChartCards title="Attendance">
+    <ChartCards title="Attendance" rightText="">
       {/* chart */}
       <ResponsiveContainer width="100%" height="90%">
         <BarChart

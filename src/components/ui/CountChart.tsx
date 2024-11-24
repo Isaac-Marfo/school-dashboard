@@ -38,7 +38,7 @@ const style = {
 
 function CountChart() {
   return (
-    <ChartCards title="Students">
+    <ChartCards title="Students" rightText="">
       {/* header 
       <div className="flex items-center justify-between ">
         <h1 className="text-lg font-semibold  text-gray-800">Students</h1>

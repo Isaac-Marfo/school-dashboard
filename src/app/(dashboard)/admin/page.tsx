@@ -1,5 +1,8 @@
 import AttendanceChart from "@/components/ui/AttendanceChart";
+import { ContainerThatAllowsFlexItemsToScrollHorizontally } from "@/components/ui/ScrollableContainers";
 import CountChart from "@/components/ui/CountChart";
+import EventCalendar from "@/components/ui/EventCalendar";
+import Announcements from "@/components/ui/Announcements";
 import FinanceChart from "@/components/ui/FinanceChart";
 import UserCard from "@/components/ui/UserCard";
 import React from "react";
@@ -10,12 +13,13 @@ function AdminPage() {
       {/* left side */}
       <div className="w-full lg:w-2/3 flex flex-col gap-8 ">
         {/* USER CARDS  */}
-        <div className="flex gap-4 justify-between overflow-x-scroll no-scrollbar">
+
+        <ContainerThatAllowsFlexItemsToScrollHorizontally>
           <UserCard type="admin" />
           <UserCard type="student" />
           <UserCard type="teacher" />
           <UserCard type="parent" />
-        </div>
+        </ContainerThatAllowsFlexItemsToScrollHorizontally>
 
         {/* MIDDLE CHART  */}
         <div className="flex gap-4  flex-col md:flex-row ">
@@ -37,7 +41,10 @@ function AdminPage() {
       </div>
 
       {/* right side */}
-      <div className="w-full lg:w-1/3   bg-gray-50">1</div>
+      <div className="w-full lg:w-1/3  flex flex-col gap-8  ">
+        <EventCalendar />
+        <Announcements />
+      </div>
     </div>
   );
 }
