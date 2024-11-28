@@ -5,7 +5,7 @@ import EventCalendar from "@/components/ui/EventCalendar";
 import Announcements from "@/components/ui/Announcements";
 import FinanceChart from "@/components/ui/FinanceChart";
 import UserCard from "@/components/ui/UserCard";
-import React from "react";
+import { role } from "@/lib/data";
 
 function AdminPage() {
   return (
